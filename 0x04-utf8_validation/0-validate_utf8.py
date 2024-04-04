@@ -31,4 +31,4 @@ def validUTF8(data):
             if not ((data[i] & 1 << 7) and not (data[i] & 1 << 6)):
                 return False
         count -= 1
-    return True
+    return count == 0
