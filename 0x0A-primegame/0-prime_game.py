@@ -9,7 +9,7 @@ def isWinner(x, nums):
     if not nums or x < 1:
         return None
     for i in nums:
-        if (i % 2 == 0 or i == 1) and i != 2:
+        if (i % 2 == 0 or i == 1) and (i != 2 or i != 3):
             player2 += 1
         else:
             player1 += 1
@@ -17,3 +17,4 @@ def isWinner(x, nums):
         return 'Maria'
     else:
         return 'Ben'
+    return None
